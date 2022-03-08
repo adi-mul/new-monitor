@@ -1,0 +1,64 @@
+.navbar{
+    background: linear-gradient(110deg, #EEE2DC 57%,  #EDC7B7  57%);
+    
+    margin-left: 2px;
+    margin-right: 2px;
+    
+
+}
+.navbar-brand {
+    margin-top: -50px;
+    margin-left:40px;
+    height:150px;
+    width: 150px;
+    border: none;
+    
+    
+}
+.nav__lg{
+    color: #AC3B61 !important;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+}
+@media screen and (max-width: 400px) {
+    .navbar{
+        background: linear-gradient(110deg, #EEE2DC 61%,  #EDC7B7  61%) !important;
+        width: 498px;
+        margin-left: 2px;
+        margin-right: 2px;
+        
+    
+    }
+    .navbar-brand{
+        margin-top: -30px;
+        margin-left:5px;
+        height: 80px;
+        width: 50;
+        
+    }
+    .nav__lg{
+        font-size:15px;
+       
+    }
+    
+}
+.nav-link{
+    color: azure;
+    font-weight: bold;
+    font-family:copperplate gothic ;
+    Object-fit: contain;
+    
+}
+
+@media(min-width:400px){
+    .nav-item{
+        font-size: 5px;
+    }
+}
+.nav-link:hover{
+    color:white ;
+    
+}
+.nav-link__title{
+    font-size: xx-large;
+}
