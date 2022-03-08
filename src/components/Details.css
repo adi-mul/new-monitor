@@ -1,0 +1,14 @@
+
+@media screen and (max-width: 400px) {
+.details_img{
+    height: 300px;
+    width: 300px;
+    
+}
+.details__col{
+    margin-top: -23px;
+    width: 600px;
+    background: linear-gradient(259deg, #EEE2DC 40%,  #EDC7B7 40%) !important; 
+    
+}
+}

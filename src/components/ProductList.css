@@ -6,6 +6,15 @@ padding-bottom: 5px;
 
 max-width: 1540 !important;
 }
+.row{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px 2em;
+  margin-left:200px ;
+}
+.row :first-child {
+    align-self: center;
+}
 .productlist__ba{
     background:linear-gradient(238.5deg, #EDC7B7  60%,  #EEE2DC 60%) ;
 }
@@ -19,6 +28,7 @@ max-width: 1540 !important;
 .productlist__ba{
     background:linear-gradient(266deg, #EDC7B7  30%,  #EEE2DC 30%) ;
     width: 500px;
+    display: flex;
 } 
 
 }
@@ -75,6 +85,12 @@ max-width: 1540 !important;
 
 
 @media screen and (max-width: 400px) {
+    .row{
+        margin: auto;
+      width: 50%;
+      display:block;
+      
+    }
     .page1{
         height: 620px;
         width:500px;
@@ -82,7 +98,7 @@ max-width: 1540 !important;
     }
     .page1__main {
         position: absolute;
-        top:90px;
+        top:140px;
         right:10px;
         height:600px;
         width:450px;
@@ -119,7 +135,7 @@ max-width: 1540 !important;
   }
 
 
-.page2{
+.page2{margin-top: -40px;
     height: 850px;
     width:1530px;
     background: linear-gradient(110deg, #EDC7B7  33.4%,  #EEE2DC 33.4%);
@@ -215,12 +231,12 @@ max-width: 1540 !important;
     }
     .page4__h{
         position:absolute;
-        top:4400px;
+        top:3300px;
         left: 30px;
     }
     .page4__h1{
         position:absolute;
-        top:4430px;
+        top:3330px;
         left: 30px;
     }
 

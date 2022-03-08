@@ -12,22 +12,22 @@ export default class Product extends Component {
 
     return (
     
-      <ProductWrapper className=" clo-5  mx-auto clo-md-4 col-xs-6 justify-content-center col-lg-3 my-3"> 
+      <ProductWrapper > 
       
       <div className='card'>
         <ProductConsumer>
          {value =>(
-           <div className='img-container p-5 '  onClick={()=>value.handleDetail(id)}>
+           <div className='img-contain'  onClick={()=>value.handleDetail(id)}>
 
            <Link to={"/details"}>
-             <img className='card-img-top' src={img} alt="product"/>
+             <img className='card-img' src={img} alt="product"/>
            </Link>
                <button className='cart-btn' disabled={inCart ? true: false} 
                onClick={()=>{value.addToCart(id);
               }}
                >
              
-                 {inCart?(<p className='text-capitalize mb-0' disabled>In Cart</p>):(<i className='fas fa-cart-plus'/>)}
+                 {inCart?(<p  disabled>In Cart</p>):(<i className='fas fa-cart-plus'/>)}
 
                </button>
            

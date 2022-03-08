@@ -7,7 +7,7 @@ font-size:1.4rem;
 margin-right:10px;
 border:0.05rem solid white;
 height:60px;
-background:transparent;
+background:#AC3B61;
 color:white;
 border-radius:0.5rem;
 padding:0.2rem 0.5rem;

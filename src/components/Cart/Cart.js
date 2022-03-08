@@ -5,10 +5,11 @@ import EmptyCart from './EmptyCart'
 import {ProductConsumer} from "../Components"
 import CartList from './CartList'
 import CartTotals from './CartTotals'
+import "./cart.css"
 export default class Cart extends Component {
   render() {
     return (
-      <section>
+      <section className='cart__bac'>
         <ProductConsumer>
           {value =>{
             const {cart }= value;
@@ -16,7 +17,7 @@ export default class Cart extends Component {
               return(
                <React.Fragment> 
                     <Title name="Cart"/>
-                    <CartColoumns/>
+                    
                     <CartList  value={value} />  
                     <CartTotals value={value}/>
                 </React.Fragment>

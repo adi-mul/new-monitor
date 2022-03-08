@@ -1,10 +1,9 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/css/bootstrap-theme.css';
+
 
 import './App.css';
 import React,{Component} from 'react';
-import'bootstrap/dist/css/bootstrap.min.css'
+
 import Navbar from './components/Navbar';
 import ProductList from './components/ProductList';
 import Details from './components/Details';

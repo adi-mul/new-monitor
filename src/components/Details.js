@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ProductConsumer } from './Components';
 import { Link } from 'react-router-dom';
 import { ButtonContainer } from './Button';
-
+import "./Details.css"
 export default class Details extends Component {
   render() {
     return (
@@ -11,6 +11,7 @@ export default class Details extends Component {
           const{id,company,img,info, price, title,inCart
           }=value.detailProduct;
           return(
+            <div className='details__col'>
             <div className='container py-5'>
               {/*title*/}
               <div className='row'>
@@ -22,7 +23,7 @@ export default class Details extends Component {
               {/* product info*/ }
               <div className='row'>
                 <div className='col-10 mx-auto col-md-6 my-3 text-capatlize'>
-                  <img src={img}  className='img-fluid' alt=''/>
+                  <img src={img}  className='details_img' alt=''/>
                 </div>
                 <div className='col-10 mx-auto col-md-6 my-3 text-capatlize'>
                   <h2>Model : {title}</h2>
@@ -63,6 +64,7 @@ export default class Details extends Component {
               </div>
 
             </div>
+            </div>  
           )
         }}
       </ProductConsumer>

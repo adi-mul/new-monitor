@@ -6,31 +6,20 @@ import './Navbar.css'
 export default class Navbar extends Component {
   render() {
     return (
-      <nav className='navbar'>
-        <Link to="/">
-        <img src={'./n13.png'}
-          alt="store" className='navbar-brand'/>
+      <div className='navbar'>
+        <img className='navbar_im' src={"./n13.png"} alt="" />
+        <nav className='navbar_1'>
+          <ul className='navbar_link'>
+          <Link to='/' className='nav-link'>
+            <li><a>New Monitor Electronics </a></li>
+          </Link>
+          </ul>
+          
+        </nav>
+        <Link to="/cart" >
+        <a><button className='navbar__btn'>Cart</button></a>
         </Link>
-        <ul className="navbar-nav  align-items-center">
-          <li className='nav-item ml-5v '>
-            
-              <Link to='/' className='nav-link'>
-               <h1 className='nav__lg'>New Monitor Electronics</h1>
-              </Link>
-              
-          </li>
-
-        </ul>
-        <Link to="/cart" className="ml-auto">
-          <ButtonContainer>
-            <span className='mr-2'>
-            <i className='fas fa-cart-plus '/>Cart
-            </span>
-          </ButtonContainer>
-        </Link>
-
-        
-      </nav>
+      </div>
     )
   }
 }

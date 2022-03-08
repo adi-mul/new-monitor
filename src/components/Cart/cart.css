@@ -1,0 +1,15 @@
+@media screen and (max-width: 400px) {
+.cart__bac{
+    height: 1600px !important;
+    margin-top: -20px;
+    width: 500px;
+    background: linear-gradient(259deg, #EEE2DC 40%,  #EDC7B7 40%) !important;
+}
+}
+
+.cart__bac{
+    height: 1600px !important;
+    margin-top: -20px;
+    width: 1530px;
+    background: linear-gradient(264.8deg, #EEE2DC 40%,  #EDC7B7 40%) !important;
+}
