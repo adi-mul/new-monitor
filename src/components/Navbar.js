@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import  styled from 'styled-components'
-import { ButtonContainer } from './Button'
+
+
 import './Navbar.css'
 export default class Navbar extends Component {
   render() {
@@ -11,13 +11,13 @@ export default class Navbar extends Component {
         <nav className='navbar_1'>
           <ul className='navbar_link'>
           <Link to='/' className='nav-link'>
-            <li><a>New Monitor Electronics </a></li>
+            <li><a href=' '>New Monitor Electronics </a></li>
           </Link>
           </ul>
           
         </nav>
         <Link to="/cart" >
-        <a><button className='navbar__btn'>Cart</button></a>
+        <a href=' '><button className='navbar__btn'>Cart</button></a>
         </Link>
       </div>
     )
